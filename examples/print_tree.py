@@ -53,7 +53,7 @@ def indent_print(s, indent):
 def print_items(node, indent):
     while node:
         if isinstance(node.item, Symbol):
-            indent_print("config " + node.item.name, indent)
+            indent_print("CONFIG_" + node.item.name, indent)
 
         elif isinstance(node.item, Choice):
             pass
